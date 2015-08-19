@@ -43,4 +43,14 @@ to
 "suite" [(-> report :test-name str)]
 ```
 
-then the test run is successful.
+then the test run is successful. However this gives not great output in the event of a failure.
+
+```
+	{:result false, :seed 1439955820034, :failing-size 2, :num-tests 3, :fail [[-2 0]], :shrunk {:total-nodes-visited 7, :depth 1, :result false, :smallest [[-1 0]]}, :test-var "first-element-is-min-after-sorting"}
+
+	FAIL in (#object[Vc [object Object]]) (:)
+	expected: result
+	  actual: false
+```
+
+I thinks this is due to the different format the result contains on the test run from the generative to the normal. I hope this helps in finding a solution.
