@@ -13,7 +13,7 @@ pom.xml.asc
 .idea
 *.iml
 **/out/*
-/resources/public/js/compiled/gen
+resources/public/cljs/test
 profiles.clj
 Procfile
 /db
