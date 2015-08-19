@@ -6,7 +6,7 @@ This repository is as succicnt an example of this failing behaviour as I could m
 
 Steps to reproduce:
 
-1. install the node modules 'npm install'
+1. install the node modules `npm install`
 2. run `lein cljsbuild once`
 3. run `karma start karma.test.conf.js --single-run`
 
